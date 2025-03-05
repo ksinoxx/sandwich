@@ -18,7 +18,7 @@ app.MapPut("/", ([FromQuery] Guid id, UpdateSandwichDTO dto) =>
         return Results.NotFound();
     }
     buffer.Bread = dto.bread;
-    buffer.Ñheese = dto.cheese;
+    buffer.Ã‘heese = dto.cheese;
     buffer.Meat = dto.meat;
     buffer.Salad = dto.salad;
     buffer.Sauce = dto.sause;
@@ -39,7 +39,7 @@ public class Sandwich
 {
     public Guid Id { get; set; }
     public string? Bread { get; set; } = null;
-    public string? Ñheese { get; set; } = null;
+    public string? Cheese { get; set; } = null;
     public string? Meat { get; set; } = null;
     public string? Salad { get; set; } = null;
     public string? Vegetables { get; set; } = null;
