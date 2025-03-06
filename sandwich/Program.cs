@@ -38,14 +38,14 @@ app.Run();
 public class Sandwich 
 {
     public Guid Id { get; set; }
-    public string? Bread { get; set; } = null;
-    public string? Cheese { get; set; } = null;
-    public string? Meat { get; set; } = null;
-    public string? Salad { get; set; } = null;
-    public string? Vegetables { get; set; } = null;
-    public string? Sauce { get; set; } = null;
-    public string? Supplement { get; set; } = null;
-    public string? Supplement2 { get; set; } = null;
+    public string? Bread { get; set; } = "null";
+    public string? Cheese { get; set; } = "null";
+    public string? Meat { get; set; } = "null";
+    public string? Salad { get; set; } = "null";
+    public string? Vegetables { get; set; } = "null";
+    public string? Sauce { get; set; } = "null";
+    public string? Supplement { get; set; } = "null";
+    public string? Supplement2 { get; set; } = "null";
     public DateOnly DateNow { get; set; }
 };
 
