@@ -9,7 +9,11 @@ app.UseSwaggerUI();
 List<Sandwich> repo = [];
 
 app.MapGet("/", () => repo);
-app.MapPost("/",(Sandwich dto)  =>  repo.Add(dto));
+app.MapPost("/", (Sandwich dto) => 
+{ 
+    dto.Id = Guid.NewGuid();
+    repo.Add(dto);
+});
 app.MapPut("/", ([FromQuery] Guid id, UpdateSandwichDTO dto) => 
 {
     Sandwich buffer = repo.Find(s => s.Id == id);
